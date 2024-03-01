@@ -2,6 +2,9 @@
 
 Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/audio-course/chapter7/voice-assistant) from Hugging Face's audio course.
 
+![Voice assistant diagram](https://github.com/rodrigobdz/hugging-face-voice-assistant/assets/14152377/8b12ae46-0f4f-492a-871e-495bfefc0931)
+[Source](https://huggingface.co/datasets/huggingface-course/audio-course-images/resolve/main/voice_assistant.png)
+
 ## Requirements
 
 - macOS
