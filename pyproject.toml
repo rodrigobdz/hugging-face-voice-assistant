@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hf_voice_assistant"]
+package-dir = { "" = "src" }
+
+[project]
+name = "hf_voice_assistant"
+version = "0.0.1"
+dependencies = [
+  "requests",
+  'importlib-metadata; python_version<"3.10"',
+  'torch',
+  'transformers',
+  'datasets',
+  'sentencepiece',
+  'soundfile',
+  'simpleaudio',
+]
+
+[project.optional-dependencies]
+notebook = ["ipykernel", "ipywidgets", "notebook", "jupyterlab"]
