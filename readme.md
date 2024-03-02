@@ -8,14 +8,14 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
 ## Requirements
 
 - macOS
-- [uv](https://astral.sh/blog/uv)
+- Install [uv](https://astral.sh/blog/uv)
 - [Generate](https://huggingface.co/settings/tokens) a Hugging Face [Access Token](https://huggingface.co/docs/hub/security-tokens) with `read` scope and set it as `HF_TOKEN` environment variable
 
   ```sh
   export HF_TOKEN=your_token
   ```
 
-- [Whisper](https://github.com/openai/whisper) dependency `ffmpeg`
+- Install [Whisper](https://github.com/openai/whisper) dependency `ffmpeg`
 
   ```sh
   brew install ffmpeg
@@ -23,13 +23,13 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
 
 ## Installation
 
-- Install dependencies
+- Install Python dependencies
 
   ```sh
   ./script/bootstrap
   ```
 
-- Install the package
+- Install Python package
 
   ```sh
   ./script/install
