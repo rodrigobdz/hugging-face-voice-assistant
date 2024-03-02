@@ -47,20 +47,31 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
 
 - Microphone not working in Jupyter notebook
 
-  [Error:](https://github.com/huggingface/transformers/issues/25183) No error message, just no transcription
+  <!-- markdownlint-disable MD033 -->
+  <details><summary>Details</summary>
+  <p>
 
-  Solution: Run code locally in a Python script
+  **[Error:](https://github.com/huggingface/transformers/issues/25183)** No error message, just no transcription
+
+  **Solution:** Run code locally in a Python script
+  
+  </p>
+  </details>
 
 - Microphone not working in macOS and only showing `you` as transcription
 
-  Error:
+  <!-- markdownlint-disable MD033 -->
+  <details><summary>Details</summary>
+  <p>
+
+  **Error:**
 
   ```sh
   Start speaking...
     you
   ```
 
-  [Solution:](https://github.com/huggingface/transformers/issues/28154#issue-2049630196)
+  **[Solution:](https://github.com/huggingface/transformers/issues/28154#issue-2049630196)**
 
   Patch `.venv/lib/python3.12/site-packages/transformers/pipelines/audio_utils.py`
 
@@ -70,10 +81,17 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
   -    input_ = ":0"
   +    input_ = ":default"
   ```
+  
+  </p>
+  </details>
 
 - Library not loaded during speech transcription
 
-  Error:
+  <!-- markdownlint-disable MD033 -->
+  <details><summary>Details</summary>
+  <p>
+
+  **Error:**
 
   ```sh
   dyld[657]: Library not loaded: /opt/homebrew/opt/libunibreak/lib/libunibreak.5.dylib
@@ -81,11 +99,14 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
     Reason: tried: '/opt/homebrew/opt/libunibreak/lib/libunibreak.5.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/opt/libunibreak/lib/libunibreak.5.dylib' (no such file), '/opt/homebrew/opt/libunibreak/lib/libunibreak.5.dylib' (no such file), '/usr/local/lib/libunibreak.5.dylib' (no such file), '/usr/lib/libunibreak.5.dylib' (no such file, not in dyld cache), '/opt/homebrew/Cellar/libunibreak/6.0/lib/libunibreak.5.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/opt/homebrew/Cellar/libunibreak/6.0/lib/libunibreak.5.dylib' (no such file), '/opt/homebrew/Cellar/libunibreak/6.0/lib/libunibreak.5.dylib' (no such file), '/usr/local/lib/libunibreak.5.dylib' (no such file), '/usr/lib/libunibreak.5.dylib' (no such file, not in dyld cache)
   ```
 
-  Solution:
+  **Solution:**
 
   ```sh
   brew reinstall ffmpeg
   ```
+  
+  </p>
+  </details>
 
 ## Contributing
 
