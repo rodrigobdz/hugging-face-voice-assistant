@@ -54,7 +54,7 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
   **[Error:](https://github.com/huggingface/transformers/issues/25183)** No error message, just no transcription
 
   **Solution:** Run code locally in a Python script
-  
+
   </p>
   </details>
 
@@ -81,7 +81,7 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
   -    input_ = ":0"
   +    input_ = ":default"
   ```
-  
+
   </p>
   </details>
 
@@ -104,7 +104,7 @@ Implementation of [_Creating a voice assistant_](https://huggingface.co/learn/au
   ```sh
   brew reinstall ffmpeg
   ```
-  
+
   </p>
   </details>
 
@@ -115,7 +115,7 @@ Please read [contributing.md](contributing.md) for details on the guidelines for
 ## Credits
 
 - Scripts follow [rodrigobdz's Shell Style Guide](https://github.com/rodrigobdz/styleguide-sh)
-- Linter configuration files imported from [rodrigobdz/linter](https://github.com/rodrigobdz/linters)
+- Linter configuration files imported from [rodrigobdz/linters](https://github.com/rodrigobdz/linters)
 - Readme is based on [rodrigobdz/minimal-readme](https://github.com/rodrigobdz/minimal-readme)
 - Code is based on [Hugging Face's audio course](https://huggingface.co/learn/audio-course/chapter7/voice-assistant)
 
